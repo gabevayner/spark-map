@@ -1,0 +1,12 @@
+{"Event":"SparkListenerApplicationStart","App ID":"app-20240101120000-0001","App Name":"Sample Spark Job","Timestamp":1704110400000}
+{"Event":"SparkListenerExecutorAdded","Executor ID":"1","Timestamp":1704110401000}
+{"Event":"SparkListenerExecutorAdded","Executor ID":"2","Timestamp":1704110401000}
+{"Event":"SparkListenerStageSubmitted","Stage Info":{"Stage ID":0,"Stage Name":"map at transform.py:42","Number of Tasks":100},"Timestamp":1704110402000}
+{"Event":"SparkListenerTaskEnd","Stage ID":0,"Task Info":{"Task ID":0,"Executor ID":"1","Host":"worker-1","Launch Time":1704110402100,"Finish Time":1704110402300,"Failed":false},"Task Metrics":{"Executor Run Time":180,"Input Metrics":{"Bytes Read":1048576,"Records Read":10000},"Shuffle Write Metrics":{"Shuffle Bytes Written":524288},"Memory Bytes Spilled":0,"Disk Bytes Spilled":0}}
+{"Event":"SparkListenerTaskEnd","Stage ID":0,"Task Info":{"Task ID":1,"Executor ID":"2","Host":"worker-2","Launch Time":1704110402100,"Finish Time":1704110402350,"Failed":false},"Task Metrics":{"Executor Run Time":230,"Input Metrics":{"Bytes Read":1048576,"Records Read":10000},"Shuffle Write Metrics":{"Shuffle Bytes Written":524288},"Memory Bytes Spilled":0,"Disk Bytes Spilled":0}}
+{"Event":"SparkListenerTaskEnd","Stage ID":0,"Task Info":{"Task ID":2,"Executor ID":"1","Host":"worker-1","Launch Time":1704110402350,"Finish Time":1704110405000,"Failed":false},"Task Metrics":{"Executor Run Time":2600,"Input Metrics":{"Bytes Read":52428800,"Records Read":500000},"Shuffle Write Metrics":{"Shuffle Bytes Written":26214400},"Memory Bytes Spilled":104857600,"Disk Bytes Spilled":52428800}}
+{"Event":"SparkListenerStageCompleted","Stage Info":{"Stage ID":0,"Number of Failed Tasks":0},"Timestamp":1704110406000}
+{"Event":"SparkListenerStageSubmitted","Stage Info":{"Stage ID":1,"Stage Name":"reduceByKey at aggregate.py:58","Number of Tasks":50},"Timestamp":1704110407000}
+{"Event":"SparkListenerTaskEnd","Stage ID":1,"Task Info":{"Task ID":100,"Executor ID":"1","Host":"worker-1","Launch Time":1704110407100,"Finish Time":1704110408500,"Failed":false},"Task Metrics":{"Executor Run Time":1300,"Shuffle Read Metrics":{"Remote Bytes Read":10485760,"Local Bytes Read":5242880,"Total Records Read":150000,"Fetch Wait Time":200},"Output Metrics":{"Bytes Written":2097152,"Records Written":20000}}}
+{"Event":"SparkListenerStageCompleted","Stage Info":{"Stage ID":1,"Number of Failed Tasks":0},"Timestamp":1704110410000}
+{"Event":"SparkListenerApplicationEnd","Timestamp":1704110415000}
